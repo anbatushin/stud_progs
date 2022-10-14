@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/c/kek/compressor/ari.h
+
+/mnt/c/kek/compressor/main.cpp
+utils.h
+/mnt/c/kek/compressor/utils.h
+ari.h
+/mnt/c/kek/compressor/ari.h
+ppm.h
+/mnt/c/kek/compressor/ppm.h
+
+/mnt/c/kek/compressor/ppm.h
+
+/mnt/c/kek/compressor/utils.h
+string
+-
+

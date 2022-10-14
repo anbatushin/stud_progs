@@ -1,0 +1,4 @@
+/mnt/c/kek/compressor/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/kek/compressor/build/CMakeFiles/edit_cache.dir
+/mnt/c/kek/compressor/build/CMakeFiles/compress.dir
+/mnt/c/kek/compressor/build/CMakeFiles/utils.dir
