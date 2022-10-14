@@ -10,7 +10,7 @@ typedef struct Node
 typedef Node *list;
 list last, first;
 
-list New_Node(int value)
+list New_Node_q(int value)
 {
 
  list tmp = (list)malloc(sizeof(Node));
@@ -28,14 +28,14 @@ list New_Node(int value)
 
 }
 
-int Check_empty()
+int check_empty_q()
 {
  return (last == NULL && first == NULL);
 }
 
-void Check()
+void check_q()
 {
- if (Check_empty())
+ if (check_empty_q())
   printf("The queue is empty\n");
  else
   printf("The queue is not empty\n");
@@ -43,14 +43,14 @@ void Check()
  return;
 }
 
-void push()
+void push_q()
 {
 
  int value;
  printf("Enter the new object:\t");
  scanf("%d", &value);
 
- list tmp = New_Node(value);
+ list tmp = New_Node_q(value);
  printf("Pushed: %d\n", value);
 
  if (first == NULL)
@@ -66,7 +66,7 @@ void push()
 
 }
 
-int pop()
+int pop_q()
 {
 
  if (first == NULL)
@@ -89,7 +89,7 @@ int pop()
 
 }
 
-void First(void)
+void first_q(void)
 {
 
  if (first != NULL)
@@ -99,11 +99,11 @@ void First(void)
 
 }
 
-void Print(void)
+void print_q(void)
 {
 
  list tmp;
- if (Check_empty())
+ if (check_empty_q())
  {
   printf("queue is empty now\n");
   return;
@@ -117,13 +117,13 @@ void Print(void)
  return;
 }
 
-void Delete(void)
+void delete_q(void)
 {
 
  list tmp;
  int value;
 
- if (Check_empty())
+ if (check_empty_q())
  {
   printf("queue is empty now\n");
   return;
@@ -139,15 +139,15 @@ void Delete(void)
  return;
 }
 
-void Ending(void)
+void ending_q(void)
 {
 
  while (first != NULL)
-  Delete();
+  delete_q();
 
 }
 
-void Start_Interface(void)
+void Start_Interface_q(void)
 {
 
  char index;
@@ -165,13 +165,13 @@ for (;;)
  scanf("%c", &index);
  switch (index)
  {
-  case '1': Check(); break;
-  case '2': pop(); break;
-  case '3': push(); break;
-  case '4': Delete(); break;
-  case '5': First(); break;
-  case '6': Print(); break;
-  case '7': Ending(); goto EXIT;
+  case '1': check_q(); break;
+  case '2': pop_q(); break;
+  case '3': push_q(); break;
+  case '4': delete_q(); break;
+  case '5': first_q(); break;
+  case '6': print_q(); break;
+  case '7': ending_q(); goto EXIT;
  }
 }
 EXIT:
@@ -182,7 +182,7 @@ EXIT:
 int main(void)
 {
 
- Start_Interface();
+ Start_Interface_q();
 
  return 0;
 }

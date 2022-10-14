@@ -88,7 +88,7 @@ void delete_st(void)
 
 }
 
-int check_empty(void)
+int check_empty_st(void)
 {
  return (head == NULL);
 }
@@ -96,7 +96,7 @@ int check_empty(void)
 
 void check_st(void)
 {
- if (check_empty())
+ if (check_empty_st())
   printf("Stack is empty\n");
  else
   printf("Stack is not empty\n");
@@ -105,7 +105,7 @@ void check_st(void)
 
 void first_st(void)
 {
- if (check_empty())
+ if (check_empty_st())
  {
   printf("Stack is empty\n");
   return;
@@ -124,7 +124,7 @@ void ending_st(void)
  return;
 }
 
-void Interface_mode(void)
+void Start_Interface_st(void)
 {
 
  char index;
@@ -159,7 +159,7 @@ EXIT:
 int main(void)
 {
 
- Interface_mode();
+ Start_Interface_st();
 
  return 0;
 }
